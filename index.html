@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <div class="signup-form">
+        <div class="image-container">
+            <img id="card-img"src="./material/henry-be-lc7xcWebECc-unsplash.jpg" alt="library">
+            <div class="card-body">
+                <div class="card-heading">BOOKS <img id="logo" src="./material/odin-lined.png" alt="odin logo"></div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" method="get" class="speaker-form">
+                <div class="intro">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+Sign up <span style="font-style:italic">now</span> to get started.
+                <div>You <span style="font-style:italic">know</span> you want to.</div>
+                </div>
+                <div class="input-field">
+                    <div class='form-cell'>
+                        <label for='first-name'>First Name</label>
+                        <input id='first-name' name='first-name' type='text' required/>
+                      </div>
+                    <div class='form-cell'>
+                        <label for='last-name'>Last Name</label>
+                        <input id='last-name' name='last-name' type='text' required/>
+                      </div>
+                    
+                    <div class='form-cell'>
+                    <label for='email'>Email</label>
+                    <input id='email'
+                            name='email'
+                            type='email'
+                            placeholder='joe@example.com'
+                            />
+                    </div>
+                    <div class='form-cell'>
+                    <label for='phone-number'>Phone Number</label>
+                    <input id='phone-number'
+                            name='phone-number'
+                            type='tel'
+                            required/>
+                    </div>
+                    <div class='form-cell'>
+                    <label for='password'>Password</label>
+                    <input minlength='8' id='password'
+                            name='password'
+                            type='password'
+                            required
+                            class="error"
+                            aria-describedby="password-validation"/>
+                    <span id="password-validation" class="validation-message">*Password do not match.</span>
+                    </div>
+                    <div class='form-cell'>
+                    <label for='confirm-password'>Confirm Password</label>
+                    <input minlength='8' id='confirm-password'
+                            name='confirm-password'
+                            type='password'
+                            required
+                            class="error"/>
+                    </div>
+                </div>
+                <div class="create-log">
+                    <button type="submit">Create Account</button>
+                    <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
