@@ -374,12 +374,24 @@
   }
   .input-field {
     display: flex;
-    justify-content:left;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: stretch;
+    /* flex-wrap: wrap; */
     box-shadow: 0px 5px 5px rgba(186, 183, 183, 0.771);
     padding: 0px 0px;
     background-color: white;
+  }
+  .form-row {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+  #title {
+    padding: 10px 40px;
+    font-size: 1.5rem;
   }
   label {
     display: block;
@@ -415,7 +427,7 @@
     background-color: rgb(120, 118, 122,0.1)
   }
   input:focus {
-    
+    box-shadow: 0 2.5px 2.5px rgba(186, 183, 183, 0.771);
   }
   input:required {
     border: 1px solid black;
@@ -433,18 +445,21 @@
   background-color: rgba(78, 46, 11, 0.892)
   }
 input {
-  width: 200px;
-  padding: 0;
+  width: 250px;
+  padding: 0 5px;
   margin: 0;
   box-sizing: border-box;
   cursor: text;
   border-radius: 5px;
   /* font-size: clamp (0.8rem , 4vh, 2rem); */
   line-height: 1.8;
-  border-inline-start-width: 5px;
+  /* border-inline-start-width: 10px; */
 }
 input.error {
     border: 1px solid red;
+}
+input.error:focus {
+    border: 1px solid black;
 }
 .create-log {
     /* position: absolute; */
@@ -460,6 +475,15 @@ input.error {
 }
 button {
     box-shadow: 0px 5px 5px rgba(186, 183, 183, 0.771);
+    border: 0.5px solid black;
+    /* padding: 2px 2px; */
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background: #3740ff;
+    color: #fff;
+    border: none;
+    padding: 0.6rem;
+    /* outline: none; */
 }
 input:user-invalid {
   border: 2px solid red;
